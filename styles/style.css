@@ -29,8 +29,16 @@ body {
   background: #e02c6d;
   text-decoration: none;
   color: #ffffff;
+  transition: background 0.8s;
 }
-
+.link-btn:hover {
+  background: #700d31;
+}
+.section-heading {
+  margin: 0 auto;
+  border-bottom: 2px solid #700d31;
+  width: 200px;
+}
 /* ----------------------------------------------
   Header Area 
 --------------------------------------------- */
@@ -38,15 +46,12 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 /* -----------------------------------------------------
   Hero Area Style 
 --------------------------------------------------*/
 .hero-area {
-  /* width: 100vw;
-  height: 80vh; */
   height: 677px;
 
   background-color: #2d25a0;
@@ -149,8 +154,61 @@ header {
   height: auto;
 }
 
-/* Up comming match area  */
+/*sponsore area */
+.sponsore-area {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+}
 
+.sponsore {
+  width: 330px;
+  height: auto;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.sponsore-img {
+  width: 280px;
+  height: 280px;
+}
+.sponsore-img img {
+  width: 100%;
+  height: 200px;
+}
+/* --------------------------------
+  Contact Us section
+----------------------------- */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  width: 168px;
+  height: 44px;
+  padding: 10px 24px;
+  background: #e02c6d;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background 0.8s;
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background: #700d31;
+  cursor: pointer;
+}
 /*---------------------------
    footer area
 ---------------------------*/
@@ -178,3 +236,8 @@ footer p {
   border-radius: 10px;
   background-color: lightgrey;
 }
+
+/* ----------------------------------
+Responsive Media Query
+
+---------------------------- */
