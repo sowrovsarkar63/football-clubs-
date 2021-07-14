@@ -20,7 +20,7 @@ body {
 .container {
   margin: 0 auto;
   width: 1440px;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 .link-btn {
   width: 168px;
@@ -39,18 +39,7 @@ body {
   border-bottom: 2px solid #700d31;
   width: 200px;
 }
-/* ----------------------------------------------
-  Header Area 
---------------------------------------------- */
-header {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
 
-/* -----------------------------------------------------
-  Hero Area Style 
---------------------------------------------------*/
 .hero-area {
   height: 677px;
 
@@ -59,6 +48,7 @@ header {
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
+
   align-items: center;
 }
 
@@ -91,6 +81,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
 
   grid-row-gap: 27px;
+  margin-bottom: 70px;
   /* grid-column-gap: 0; */
 }
 .player {
@@ -143,6 +134,7 @@ header {
   font-size: 16px;
   line-height: 28px;
   margin: 15px 0px;
+  padding-left: 2px;
 }
 .highlight-img {
   width: 567px;
@@ -241,3 +233,95 @@ footer p {
 Responsive Media Query
 
 ---------------------------- */
+/* ---------------------
+  MOBILE DEVICES 
+-------------- */
+
+@media only screen and (max-width: 688px) {
+  /* ***********************
+    Common Css
+  ******************* */
+  .container {
+    margin: 0 auto;
+    width: 325px;
+    height: auto;
+  }
+  .link-btn:hover {
+    background-color: #700d31;
+  }
+  /* ****************
+  Hero Area 
+  ************ */
+  .hero-area {
+    width: 100vw;
+    height: auto;
+  }
+  .hero-img img {
+    width: 100%;
+    height: auto;
+  }
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero-details {
+    width: 278px;
+    height: 138px;
+    margin-right: 0;
+  }
+  .hero-details h1 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  /* ************************
+
+  Player Section
+  ********************* */
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ***************************
+  Highlight section 
+  ************************* */
+  .highlight-section {
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .highlight-info {
+    width: 329px;
+    height: auto;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  .highlight-info h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .highlight-img {
+    width: 328px;
+    height: 248px;
+  }
+
+  /* ******************************
+  sponsore area 
+  ************************ */
+  .sponsore-area {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+  }
+
+  /* **************************
+  Footer
+  ********************** */
+  .footer-img {
+    width: 150px;
+    height: 63px;
+  }
+  footer {
+    width: 235.87px;
+  }
+}
